@@ -1,0 +1,43 @@
+.zakaz--properties {
+  background: url("../../img/bg_zakaz.png") no-repeat;
+  background-size: cover;
+  padding: 120px 0px;
+}
+
+.zakaz__title {
+  text-align: center;
+}
+
+.zakaz__content {
+  display: grid;
+  grid-template-rows: auto 170px 230px;
+  grid-row-gap: 70px;
+}
+
+.zakaz__slider {
+  overflow: hidden;
+}
+
+.zakaz-swiper--properties {
+  position: relative;
+}
+
+@media only screen and (max-width: 767px) {
+  .zakaz--properties {
+    padding: 80px 0px;
+  }
+  .zakaz__content {
+    grid-template-rows: auto;
+  }
+  .zakaz--properties {
+    padding: 80px 0px;
+  }
+}
+@media only screen and (max-width: 470px) {
+  .zakaz--properties {
+    padding: 60px 0px;
+  }
+  .zakaz__content {
+    grid-row-gap: 38px;
+  }
+}

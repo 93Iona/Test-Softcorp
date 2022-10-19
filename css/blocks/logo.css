@@ -1,0 +1,18 @@
+.logo__link {
+  font-family: "Raleway";
+  font-weight: 800;
+  font-style: normal;
+  font-size: 28px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+
+.logo__span-color {
+  color: #3E9CDC;
+}
+
+@media only screen and (max-width: 390px) {
+  .logo__link {
+    font-size: 25px;
+  }
+}

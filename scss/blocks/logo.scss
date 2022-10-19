@@ -1,0 +1,20 @@
+
+$accent-color: #3E9CDC;
+
+.logo__link{
+	font-family: 'Raleway';
+	font-weight:800;
+	font-style: normal;
+	font-size: 28px;
+	color:#FFFFFF;
+	text-transform: uppercase;
+	
+}
+
+.logo__span-color{color:$accent-color;}
+
+
+
+@media only screen and (max-width:390px) {
+.logo__link {font-size: 25px;}
+}

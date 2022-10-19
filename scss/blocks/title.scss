@@ -1,0 +1,11 @@
+$accent-color: #3E9CDC;
+
+.title__span-text{
+color:$accent-color;
+}
+
+.title__subtext{padding:23px 0px 10px;}
+
+@media only screen and (max-width:470px) {
+.title__subtext { padding: 14px 0px;}
+}

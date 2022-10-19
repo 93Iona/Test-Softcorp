@@ -1,0 +1,143 @@
+
+.select-box {
+	position: relative;
+	display: block;
+	font-family: 'Lato';
+	font-size: 18px;
+	font-weight:400;
+	color: #272733;
+	padding: 0px;
+	
+  &__current {
+    position: relative;
+    box-shadow: 0 15px 30px -10px transparentize(#000, 0.9);
+    cursor: pointer;
+    outline: none;
+	padding:12px 10px;
+	background-color:#DEDEE0;
+	border:1px solid #FFF;
+	border-radius:3px;
+    
+    &:focus {
+	color:#FFF;
+	background-color: #3a3c4c;
+	border:1px solid #3a3c4c;
+      & + .select-box__list {
+        opacity: 1;
+        animation-name: none;
+		background-color: #272733;
+
+        .select-box__option {
+          cursor: pointer;
+        }
+      }
+      
+      .select-box__icon {
+        
+		background:url(../../img/add_select_w.svg) no-repeat center;
+      }
+	  
+	  .select-box__input-text{
+		background-color: #3a3c4c;
+	  }
+    }
+  }
+  
+  &__icon {
+	background:url(../../img/add_select.svg) no-repeat center;
+	width:10px;
+	height:10px;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    transition: 0.2s ease;
+  }
+  
+  &__value {
+    display: flex;
+  }
+  
+  &__input {
+    display: none;
+    
+    &:checked + .select-box__input-text {
+      display: block;
+    }
+  }
+  
+  &__input-text {
+    display: none;
+    width: 100%;
+    margin: 0;
+    background-color: #DEDEE0;
+  }
+   
+  &__list {
+    position: absolute;
+    width: 99.5%;
+    padding: 0;
+	left: 0px;
+    top: 46px;
+    list-style: none;
+    opacity: 0;
+	z-index: 50;
+	font-family: 'Lato';
+	font-size: 18px;
+	font-weight:400;
+	color: #FFF;
+	border: 1px solid #3D4050;
+    border-radius: 0px 0px 3px 3px;
+    animation-name: HideList;
+    animation-duration: 0.5s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: step-start;
+    box-shadow: 0 15px 30px -10px transparentize(#000, 0.9);
+	overflow: auto;
+	height: 180px;
+	scrollbar-color: #3E9CDC #3D4050;
+	
+		&::-webkit-scrollbar {
+			width: 8px;
+			border-radius: 10px;
+		}
+		&::-webkit-scrollbar-thumb {
+			border-radius: 5px;
+			background-color: #3E9CDC;
+		}
+		&::-webkit-scrollbar-track {
+			-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.2);
+			border-radius: 5px;
+			background-color: #3D4050;
+		}
+	
+  }
+  
+  
+  &__option {
+    display: block;
+    padding: 8px 10px;
+    background-color: #272733;
+    
+    &:hover,
+    &:focus {
+      color: #42A9ED;
+    }
+  }
+}
+
+@keyframes HideList {
+  from {
+    transform: scaleY(1);
+  }
+  to {
+    transform: scaleY(0);
+  }
+}
+
+
+@media only screen and (max-width:470px) {
+.select-box {font-size: 16px;}
+.select-box__list {font-size: 16px;}
+}

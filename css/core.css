@@ -1,0 +1,130 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: "Lato";
+  font-size: 16px;
+  color: #000000;
+  background: #272733;
+}
+
+.wrapper {
+  max-width: 100%;
+  min-width: 320px;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1170px;
+  min-width: 290px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+a {
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+}
+a:hover, a:focus {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+input,
+button,
+select,
+textarea {
+  outline: none;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 36px;
+  font-weight: 800;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #000000;
+}
+
+h4 {
+  font-size: 18px;
+  font-weight: 400;
+  color: #BBBBBB;
+}
+
+h5 {
+  font-size: 16px;
+  font-weight: 400;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+@media only screen and (max-width: 991px) {
+  h1 {
+    font-size: 42px;
+  }
+  h2 {
+    font-size: 33px;
+  }
+  h4 {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  h1 {
+    font-size: 35px;
+  }
+  h3 {
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 470px) {
+  h1 {
+    font-size: 30px;
+  }
+  h2 {
+    font-size: 29px;
+  }
+  h3 {
+    font-size: 16px;
+  }
+  h4 {
+    font-size: 14px;
+  }
+  h5 {
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  h1 {
+    font-size: 24px;
+  }
+  h2 {
+    font-size: 23px;
+  }
+  h4 {
+    font-size: 13px;
+  }
+}
