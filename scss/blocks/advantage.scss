@@ -1,0 +1,29 @@
+
+.advantage{padding-inline-start: 20px;}
+
+.advantage__item {
+	font-size:20px;
+	font-weight:400;
+	color:#000000;
+	padding-bottom: 5px;
+    padding-left: 5px;
+	position:relative;
+}
+
+.advantage__item::before{
+	content:'-';
+	width:7px;
+	height:2px;
+	color:#000000;
+	position:absolute;
+	left: -9px;
+}
+
+@media only screen and (max-width:767px) {
+.advantage__item {font-size:17px;}
+}
+
+@media only screen and (max-width:470px) {
+.advantage__item {font-size: 15px;}
+.advantage{padding-inline-start: 10px;}
+}
