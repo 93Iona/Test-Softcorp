@@ -58,7 +58,6 @@
 	  let currSlide  = $('.zakaz__slider .swiper-slide.active-dots').removeClass('active-dots');
 
 	  let index = currSlide.index() + 1;
-	   console.log(index); 
 	$('.zakaz__slider .swiper-slide').eq(index).addClass('active-dots');
 	
 	 if($(window).width()< 500) {
